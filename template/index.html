@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora el Mundo - Agencia de Viajes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .navbar {
+            background-color: var(--primary-color) !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .destination-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .destination-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .price-tag {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .features-section {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .feature-box {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .feature-box i {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .rating {
+            color: #f39c12;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 0 20px 0;
+        }
+
+        .contact-form {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-globe"></i> Explora el Mundo
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#paquetes">Paquetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <h1>Descubre Tu Próxima Aventura</h1>
+            <p>Viajes inolvidables a los destinos más increíbles del mundo</p>
+            <a href="#paquetes" class="btn btn-danger btn-lg">Ver Paquetes</a>
+            <a href="#contacto" class="btn btn-outline-light btn-lg ms-2">Contactar</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-box">
+                        <i class="fas fa-plane-departure"></i>
+                        <h5>Vuelos Incluidos</h5>
+                        <p>Mejores tarifas aéreas garantizadas</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-box">
+                        <i class="fas fa-hotel"></i>
+                        <h5>Hoteles Premium</h5>
+                        <p>Alojamiento de calidad superior</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-box">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h5>Tours Guiados</h5>
+                        <p>Expertos locales en cada destino</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="feature-box">
+                        <i class="fas fa-headset"></i>
+                        <h5>Soporte 24/7</h5>
+                        <p>Asistencia en todo momento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinos" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Destinos Populares</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card destination-card">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500" class="card-img-top" alt="París">
+                        <div class="card-body">
+                            <h5 class="card-title">París, Francia</h5>
+                            <p class="card-text">La ciudad del amor te espera con sus monumentos icónicos y su encantadora cultura.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price-tag">$1,299</span>
+                                <a href="#" class="btn btn-primary">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card destination-card">
+                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=500" class="card-img-top" alt="Bali">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali, Indonesia</h5>
+                            <p class="card-text">Playas paradisíacas, templos ancestrales y una cultura única te están esperando.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price-tag">$1,499</span>
+                                <a href="#" class="btn btn-primary">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card destination-card">
+                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500" class="card-img-top" alt="Dubai">
+                        <div class="card-body">
+                            <h5 class="card-title">Dubai, EAU</h5>
+                            <p class="card-text">Lujo, modernidad y experiencias inolvidables en el corazón del desierto.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price-tag">$1,799</span>
+                                <a href="#" class="btn btn-primary">Ver Más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="paquetes" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Paquetes Especiales</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary"><i class="fas fa-heart"></i> Luna de Miel</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> 7 noches en hotel 5 estrellas</li>
+                                <li><i class="fas fa-check text-success"></i> Vuelos ida y vuelta</li>
+                                <li><i class="fas fa-check text-success"></i> Cena romántica incluida</li>
+                                <li><i class="fas fa-check text-success"></i> Tours privados</li>
+                                <li><i class="fas fa-check text-success"></i> Spa y tratamientos</li>
+                            </ul>
+                            <h4 class="text-danger">Desde $2,499 por pareja</h4>
+                            <button class="btn btn-danger w-100">Reservar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary"><i class="fas fa-users"></i> Familiar</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> 5 noches todo incluido</li>
+                                <li><i class="fas fa-check text-success"></i> Actividades para niños</li>
+                                <li><i class="fas fa-check text-success"></i> Entretenimiento diario</li>
+                                <li><i class="fas fa-check text-success"></i> Parques temáticos</li>
+                                <li><i class="fas fa-check text-success"></i> Comidas incluidas</li>
+                            </ul>
+                            <h4 class="text-danger">Desde $1,899 por familia</h4>
+                            <button class="btn btn-danger w-100">Reservar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Cliente">
+                        <h5>María González</h5>
+                        <div class="rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-muted">"Increíble experiencia en París. Todo estuvo perfectamente organizado y el servicio fue excepcional."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Cliente">
+                        <h5>Carlos Ramírez</h5>
+                        <div class="rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-muted">"Nuestra luna de miel en Bali fue un sueño hecho realidad. Recomiendo totalmente esta agencia."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Cliente">
+                        <h5>Ana Martínez</h5>
+                        <div class="rating mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-muted">"Viaje familiar a Dubai inolvidable. Los niños se divirtieron muchísimo y nosotros también."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-5" style="background-color: #f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="destino" class="form-label">Destino de Interés</label>
+                                    <select class="form-select" id="destino">
+                                        <option selected>Selecciona un destino</option>
+                                        <option value="paris">París</option>
+                                        <option value="bali">Bali</option>
+                                        <option value="dubai">Dubai</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-lg w-100">Enviar Consulta</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5><i class="fas fa-globe"></i> Explora el Mundo</h5>
+                    <p>Tu agencia de viajes de confianza para experiencias inolvidables alrededor del mundo.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#destinos" class="text-white text-decoration-none">Destinos</a></li>
+                        <li><a href="#paquetes" class="text-white text-decoration-none">Paquetes</a></li>
+                        <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p>&copy; 2025 Explora el Mundo. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
