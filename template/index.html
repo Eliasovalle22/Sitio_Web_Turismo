@@ -3,137 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explora el Mundo - Agencia de Viajes</title>
+    <title>Tajamares Club - Donde el mar, la calma y el deporte se encuentran</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .hero-section {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 150px 0;
-            text-align: center;
-        }
-
-        .hero-section h1 {
-            font-size: 3.5rem;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .hero-section p {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-        }
-
-        .navbar {
-            background-color: var(--primary-color) !important;
-        }
-
-        .navbar-brand {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        .destination-card {
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-
-        .destination-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .destination-card img {
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .price-tag {
-            background-color: var(--accent-color);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: bold;
-            display: inline-block;
-        }
-
-        .features-section {
-            background-color: #f8f9fa;
-            padding: 80px 0;
-        }
-
-        .feature-box {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .feature-box i {
-            font-size: 3rem;
-            color: var(--secondary-color);
-            margin-bottom: 20px;
-        }
-
-        .testimonial-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-
-        .testimonial-card img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-
-        .rating {
-            color: #f39c12;
-        }
-
-        footer {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 40px 0 20px 0;
-        }
-
-        .contact-form {
-            background-color: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-    </style>
+    <link href="../static/css/styles.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="fas fa-globe"></i> Explora el Mundo
+                <i class="fas fa-water"></i> Tajamares Club
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -141,9 +21,9 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#paquetes">Paquetes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -153,183 +33,274 @@
     <!-- Hero Section -->
     <section id="inicio" class="hero-section">
         <div class="container">
-            <h1>Descubre Tu Próxima Aventura</h1>
-            <p>Viajes inolvidables a los destinos más increíbles del mundo</p>
-            <a href="#paquetes" class="btn btn-danger btn-lg">Ver Paquetes</a>
-            <a href="#contacto" class="btn btn-outline-light btn-lg ms-2">Contactar</a>
+            <h1>Tajamares Club</h1>
+            <p class="lead">Donde el mar, la calma y el deporte se encuentran</p>
+            <p class="h5 mb-4">Travel Agency</p>
+            <a href="#paquetes" class="btn btn-primary btn-lg me-2">Ver Paquetes</a>
+            <a href="#contacto" class="btn btn-outline-light btn-lg">Contactar</a>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features-section">
+    <!-- About Section -->
+    <section id="nosotros" class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="feature-box">
-                        <i class="fas fa-plane-departure"></i>
-                        <h5>Vuelos Incluidos</h5>
-                        <p>Mejores tarifas aéreas garantizadas</p>
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 mb-4">
+                    <h3 class="text-primary mb-3">Nuestra Empresa</h3>
+                    <p class="lead">Tajamares Club se especializa en el desarrollo de servicios turísticos integrales, orientados a la recreación, el deporte y el disfrute de entornos de sol y playa.</p>
+                    <p>Distinguiéndose por mantener altos estándares de calidad, seguridad y atención al cliente, respaldados por un equipo capacitado y comprometido. En busca de consolidarse como una organización referente en el sector, contribuyendo al fortalecimiento del turismo local y a la generación de experiencias únicas para nuestros visitantes.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="../static/img/logo.jpg" alt="Playa" class="img-fluid rounded shadow">
+                </div>
+            </div>
+
+            <!-- Misión y Visión -->
+            <div class="row mt-5">
+                <div class="col-md-6 mb-4">
+                    <div class="card mission-vision-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary"><i class="fas fa-bullseye"></i> Misión</h3>
+                            <p>En Tajamares Club, somos una agencia de deportes náuticos y de playa ubicada en Puerto Mocho, Atlántico. Ofrecemos experiencias seguras y divertidas en paddle surf, kayak, water biking, fútbol y vóley playa, fomentando el turismo local y generando espacios de integración, recreación y disfrute para visitantes y turistas.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="feature-box">
-                        <i class="fas fa-hotel"></i>
-                        <h5>Hoteles Premium</h5>
-                        <p>Alojamiento de calidad superior</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="feature-box">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <h5>Tours Guiados</h5>
-                        <p>Expertos locales en cada destino</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="feature-box">
-                        <i class="fas fa-headset"></i>
-                        <h5>Soporte 24/7</h5>
-                        <p>Asistencia en todo momento</p>
+                <div class="col-md-6 mb-4">
+                    <div class="card mission-vision-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary"><i class="fas fa-eye"></i> Visión</h3>
+                            <p>En Tajamares Club, seremos en los próximos 5 años el principal referente turístico y deportivo de Puerto Mocho y del Atlántico colombiano. Nos proyectamos como un espacio sostenible e inclusivo que atraiga visitantes nacionales e internacionales, integrando deportes náuticos, actividades de playa, cultura y música en experiencias únicas frente al mar Caribe.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Destinations Section -->
-    <section id="destinos" class="py-5">
+    <!-- Services Section -->
+    <section id="servicios" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">Destinos Populares</h2>
+            <h2 class="section-title">Nuestros Servicios</h2>
+            
+            <!-- Deportes Náuticos -->
+            <h3 class="text-center text-primary mb-4">Deportes Náuticos</h3>
+            <p class="text-center mb-5">Tajamares Club ofrece una variedad de actividades acuáticas seguras, guiadas por instructores capacitados y adaptadas a todos los niveles de experiencia.</p>
+            
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="../static/img/kayak.jpg" class="card-img-top" alt="Kayak">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-ship text-primary"></i> Kayak</h5>
+                            <p class="card-text">Recorrido guiado por las aguas de Puerto Mocho, ideal para parejas o grupos que buscan contacto directo con la naturaleza.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="../static/img/paddle_surf.jpg" class="card-img-top" alt="Paddle Surf">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-water text-primary"></i> Paddle Surf</h5>
+                            <p class="card-text">Actividad individual o grupal que permite recorrer el mar de manera relajada y disfrutar del paisaje costero.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="../static/img/water_biking.jpg" class="card-img-top" alt="Water Biking">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-bicycle text-primary"></i> Water Biking</h5>
+                            <p class="card-text">Bicicletas acuáticas que combinan deporte y diversión, ofreciendo una forma innovadora y ecológica de explorar el entorno marino.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="../static/img/yoga_agua.jpg" class="card-img-top" alt="Yoga en el Agua">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-spa text-primary"></i> Yoga en el Agua (SUP Yoga)</h5>
+                            <p class="card-text">Se realiza sobre tablas de paddle surf, combinando posturas de yoga, equilibrio y meditación. Promueve la armonía entre cuerpo y mente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="../static/img/kite_surf.jpg" class="card-img-top" alt="Kite Surf">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-wind text-primary"></i> Kite Surf</h5>
+                            <p class="card-text">Actividad de alto nivel deportivo y adrenalina, ideal para quienes buscan aventura y desafío. Incluye clases guiadas por instructores certificados, equipo profesional y acompañamiento de seguridad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deportes de Playa -->
+            <h3 class="text-center text-primary mb-4 mt-5">Deportes de Playa</h3>
+            <p class="text-center mb-5">Tajamares Club fomenta la práctica de actividades deportivas y recreativas en la arena, promoviendo la integración social y el bienestar físico.</p>
+            
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card destination-card">
-                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500" class="card-img-top" alt="París">
+                <div class="col-md-6 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="../static/img/futbol_playa.jpg" class="card-img-top" alt="Fútbol Playa">
                         <div class="card-body">
-                            <h5 class="card-title">París, Francia</h5>
-                            <p class="card-text">La ciudad del amor te espera con sus monumentos icónicos y su encantadora cultura.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price-tag">$1,299</span>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
-                            </div>
+                            <h5 class="card-title"><i class="fas fa-futbol text-primary"></i> Fútbol Playa</h5>
+                            <p class="card-text">Torneos y partidos amistosos que fortalecen la convivencia y el espíritu competitivo en un ambiente playero.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card destination-card">
-                        <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=500" class="card-img-top" alt="Bali">
+                <div class="col-md-6 mb-4">
+                    <div class="card service-card h-100">
+                        <img src="../static/img/voley_playa.jpg" class="card-img-top" alt="Vóley Playa">
                         <div class="card-body">
-                            <h5 class="card-title">Bali, Indonesia</h5>
-                            <p class="card-text">Playas paradisíacas, templos ancestrales y una cultura única te están esperando.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price-tag">$1,499</span>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
-                            </div>
-                        </div>
+                            <h5 class="card-title"><i class="fas fa-volleyball-ball text-primary"></i> Vóley Playa</h5>
+                            <p class="card-text">Espacios adaptados para el juego libre o eventos deportivos, ideales para grupos de amigos, familias o instituciones.</p>
+                        </div>  
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card destination-card">
-                        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=500" class="card-img-top" alt="Dubai">
-                        <div class="card-body">
-                            <h5 class="card-title">Dubai, EAU</h5>
-                            <p class="card-text">Lujo, modernidad y experiencias inolvidables en el corazón del desierto.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <span class="price-tag">$1,799</span>
-                                <a href="#" class="btn btn-primary">Ver Más</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+
+            <!-- Experiencias Recreativas -->
+            <div class="alert alert-info mt-5" role="alert">
+                <h4 class="alert-heading"><i class="fas fa-music"></i> Experiencias Recreativas y Culturales</h4>
+                <p>Además de las actividades deportivas, Tajamares Club organiza eventos y experiencias que combinan música, gastronomía y cultura local, fortaleciendo el turismo en la zona. Entre ellos destacan:</p>
+                <ul class="mb-0">
+                    <li>Torneos inaugurales y actividades de integración</li>
+                    <li>Conciertos en la playa y presentaciones de DJs</li>
+                    <li>Espacios de promoción cultural y gastronómica del Caribe</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- Packages Section -->
-    <section id="paquetes" class="py-5" style="background-color: #f8f9fa;">
+    <section id="paquetes" class="py-5">
         <div class="container">
-            <h2 class="section-title">Paquetes Especiales</h2>
+            <h2 class="section-title">Paquetes Especiales Tajamares Club</h2>
+            
             <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                <!-- Paquete Aventura Náutica -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card package-card h-100 border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="fas fa-water"></i> Aventura Náutica</h4>
+                            <small>Ideal para turistas activos, grupos de amigos o parejas aventureras</small>
+                        </div>
                         <div class="card-body">
-                            <h3 class="card-title text-primary"><i class="fas fa-heart"></i> Luna de Miel</h3>
+                            <p><strong>Objetivo:</strong> Ofrecer una experiencia completa de deportes acuáticos, segura y divertida.</p>
+                            <h5 class="text-primary mt-3">Incluye:</h5>
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success"></i> 7 noches en hotel 5 estrellas</li>
-                                <li><i class="fas fa-check text-success"></i> Vuelos ida y vuelta</li>
-                                <li><i class="fas fa-check text-success"></i> Cena romántica incluida</li>
-                                <li><i class="fas fa-check text-success"></i> Tours privados</li>
-                                <li><i class="fas fa-check text-success"></i> Spa y tratamientos</li>
+                                <li><i class="fas fa-check text-success"></i> 30 minutos de paddle surf guiado</li>
+                                <li><i class="fas fa-check text-success"></i> 30 minutos de kayak doble o water biking</li>
+                                <li><i class="fas fa-check text-success"></i> 30 minutos de yoga en el agua</li>
+                                <li><i class="fas fa-check text-success"></i> 30 minutos de kitesurf</li>
+                                <li><i class="fas fa-check text-success"></i> Refrigerio hidratante</li>
+                                <li><i class="fas fa-check text-success"></i> Uso de chaleco salvavidas y equipo de seguridad</li>
+                                <li><i class="fas fa-check text-success"></i> Fotografías digitales de la experiencia</li>
                             </ul>
-                            <h4 class="text-danger">Desde $2,499 por pareja</h4>
-                            <button class="btn btn-danger w-100">Reservar Ahora</button>
+                            <p class="mt-3"><strong><i class="far fa-clock"></i> Duración:</strong> 2 horas</p>
+                            <button class="btn btn-primary w-100">Reservar Ahora</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title text-primary"><i class="fas fa-users"></i> Familiar</h3>
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-check text-success"></i> 5 noches todo incluido</li>
-                                <li><i class="fas fa-check text-success"></i> Actividades para niños</li>
-                                <li><i class="fas fa-check text-success"></i> Entretenimiento diario</li>
-                                <li><i class="fas fa-check text-success"></i> Parques temáticos</li>
-                                <li><i class="fas fa-check text-success"></i> Comidas incluidas</li>
-                            </ul>
-                            <h4 class="text-danger">Desde $1,899 por familia</h4>
-                            <button class="btn btn-danger w-100">Reservar Ahora</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonios" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial-card text-center">
-                        <img src="https://i.pravatar.cc/150?img=1" alt="Cliente">
-                        <h5>María González</h5>
-                        <div class="rating mb-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                <!-- Paquete Sol y Arena -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card package-card h-100 border-warning">
+                        <div class="card-header bg-warning text-dark">
+                            <h4 class="mb-0"><i class="fas fa-sun"></i> Sol y Arena</h4>
+                            <small>Ideal para familias y grupos recreativos</small>
                         </div>
-                        <p class="text-muted">"Increíble experiencia en París. Todo estuvo perfectamente organizado y el servicio fue excepcional."</p>
+                        <div class="card-body">
+                            <p><strong>Objetivo:</strong> Fomentar la recreación familiar y el deporte en un ambiente playero y social.</p>
+                            <h5 class="text-warning mt-3">Incluye:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Acceso a zonas deportivas (vóley y fútbol playa)</li>
+                                <li><i class="fas fa-check text-success"></i> Organización de mini torneos o juegos grupales</li>
+                                <li><i class="fas fa-check text-success"></i> Equipo completo para las actividades</li>
+                                <li><i class="fas fa-check text-success"></i> Refrigerio y zona de descanso</li>
+                                <li><i class="fas fa-check text-success"></i> Música ambiente y animación</li>
+                            </ul>
+                            <p class="mt-3"><strong><i class="far fa-clock"></i> Duración:</strong> 2 a 3 horas</p>
+                            <button class="btn btn-warning w-100">Reservar Ahora</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card text-center">
-                        <img src="https://i.pravatar.cc/150?img=12" alt="Cliente">
-                        <h5>Carlos Ramírez</h5>
-                        <div class="rating mb-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+
+                <!-- Paquete Experiencia Caribe -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card package-card h-100 border-info">
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0"><i class="fas fa-umbrella-beach"></i> Experiencia Caribe</h4>
+                            <small>Ideal para turistas nacionales o extranjeros que buscan vivir la cultura local</small>
                         </div>
-                        <p class="text-muted">"Nuestra luna de miel en Bali fue un sueño hecho realidad. Recomiendo totalmente esta agencia."</p>
+                        <div class="card-body">
+                            <p><strong>Objetivo:</strong> Unir deporte, cultura y gastronomía en una experiencia auténtica y memorable.</p>
+                            <h5 class="text-info mt-3">Incluye:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Actividad acuática a elegir (paddle surf, kayak, water biking o kitesurf)</li>
+                                <li><i class="fas fa-check text-success"></i> Torneo amistoso de vóley o fútbol playa</li>
+                                <li><i class="fas fa-check text-success"></i> Almuerzo típico o degustación gastronómica local</li>
+                                <li><i class="fas fa-check text-success"></i> Música caribeña en vivo o DJ invitado</li>
+                                <li><i class="fas fa-check text-success"></i> Certificado "Vive el Caribe con Tajamares Club"</li>
+                            </ul>
+                            <p class="mt-3"><strong><i class="far fa-clock"></i> Duración:</strong> 4 horas</p>
+                            <button class="btn btn-info w-100">Reservar Ahora</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card text-center">
-                        <img src="https://i.pravatar.cc/150?img=5" alt="Cliente">
-                        <h5>Ana Martínez</h5>
-                        <div class="rating mb-2">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+
+                <!-- Paquete Sunset Club -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card package-card h-100 border-danger">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="mb-0"><i class="fas fa-heart"></i> Sunset Club</h4>
+                            <small>Ideal para parejas o grupos jóvenes</small>
                         </div>
-                        <p class="text-muted">"Viaje familiar a Dubai inolvidable. Los niños se divirtieron muchísimo y nosotros también."</p>
+                        <div class="card-body">
+                            <p><strong>Objetivo:</strong> Ofrecer una experiencia romántica y relajada que combine naturaleza, música y paisaje.</p>
+                            <h5 class="text-danger mt-3">Incluye:</h5>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Actividad acuática ligera (kayak o paddle surf al atardecer)</li>
+                                <li><i class="fas fa-check text-success"></i> Zona de relax frente al mar</li>
+                                <li><i class="fas fa-check text-success"></i> Cóctel o bebida refrescante</li>
+                                <li><i class="fas fa-check text-success"></i> Música chill o DJ caribeño</li>
+                                <li><i class="fas fa-check text-success"></i> Sesión de fotos del atardecer</li>
+                            </ul>
+                            <p class="mt-3"><strong><i class="far fa-clock"></i> Duración:</strong> 2 horas (al final de la tarde)</p>
+                            <button class="btn btn-danger w-100">Reservar Ahora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paquete Tajamares Total -->
+                <div class="col-12 mb-4">
+                    <div class="card package-card border-success">
+                        <div class="card-header bg-success text-white">
+                            <h4 class="mb-0"><i class="fas fa-star"></i> Tajamares Total</h4>
+                            <small>Ideal para grupos empresariales, colegios o eventos especiales</small>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>Objetivo:</strong> Fortalecer la integración, el trabajo en equipo y la diversión grupal en un entorno natural.</p>
+                                    <h5 class="text-success mt-3">Incluye:</h5>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-success"></i> Circuito completo de actividades (paddle surf, kayak, water biking, kitesurf)</li>
+                                        <li><i class="fas fa-check text-success"></i> Torneo deportivo (fútbol o vóley playa)</li>
+                                        <li><i class="fas fa-check text-success"></i> Zona lounge y refrigerio grupal</li>
+                                        <li><i class="fas fa-check text-success"></i> Premios y reconocimientos para los ganadores</li>
+                                        <li><i class="fas fa-check text-success"></i> Apoyo logístico y personal de animación</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 d-flex align-items-center">
+                                    <div class="text-center w-100">
+                                        <p class="mb-3"><strong><i class="far fa-clock"></i> Duración:</strong> Jornada completa</p>
+                                        <button class="btn btn-success btn-lg">Reservar Ahora</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -337,7 +308,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contacto" class="py-5" style="background-color: #f8f9fa;">
+    <section id="contacto" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title">Contáctanos</h2>
             <div class="row justify-content-center">
@@ -360,13 +331,14 @@
                                     <input type="tel" class="form-control" id="telefono" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="destino" class="form-label">Destino de Interés</label>
-                                    <select class="form-select" id="destino">
-                                        <option selected>Selecciona un destino</option>
-                                        <option value="paris">París</option>
-                                        <option value="bali">Bali</option>
-                                        <option value="dubai">Dubai</option>
-                                        <option value="otro">Otro</option>
+                                    <label for="paquete" class="form-label">Paquete de Interés</label>
+                                    <select class="form-select" id="paquete">
+                                        <option selected>Selecciona un paquete</option>
+                                        <option value="aventura">Aventura Náutica</option>
+                                        <option value="sol">Sol y Arena</option>
+                                        <option value="caribe">Experiencia Caribe</option>
+                                        <option value="sunset">Sunset Club</option>
+                                        <option value="total">Tajamares Total</option>
                                     </select>
                                 </div>
                             </div>
@@ -374,9 +346,18 @@
                                 <label for="mensaje" class="form-label">Mensaje</label>
                                 <textarea class="form-control" id="mensaje" rows="4" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-danger btn-lg w-100">Enviar Consulta</button>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">Enviar Consulta</button>
                         </form>
                     </div>
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <h3 class="text-primary mb-3">Encuéntranos</h3>
+                    <p><i class="fas fa-map-marker-alt text-primary"></i> <strong>Puerto Mocho, Atlántico, Colombia</strong></p>
+                    <p><i class="fas fa-phone text-primary"></i> Contacto: +57 (300) 123-4567</p>
                 </div>
             </div>
         </div>
@@ -387,13 +368,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5><i class="fas fa-globe"></i> Explora el Mundo</h5>
-                    <p>Tu agencia de viajes de confianza para experiencias inolvidables alrededor del mundo.</p>
+                    <h5><i class="fas fa-water"></i> Tajamares Club</h5>
+                    <p>Donde el mar, la calma y el deporte se encuentran. Tu mejor opción para deportes náuticos y de playa en Puerto Mocho, Atlántico.</p>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h5>Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#destinos" class="text-white text-decoration-none">Destinos</a></li>
+                        <li><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></li>
+                        <li><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
                         <li><a href="#paquetes" class="text-white text-decoration-none">Paquetes</a></li>
                         <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
                     </ul>
@@ -403,13 +385,14 @@
                     <div class="social-links">
                         <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x"></i></a>
                         <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-whatsapp fa-2x"></i></a>
                     </div>
+                    <p class="mt-3"><small>Puerto Mocho, Atlántico - Colombia</small></p>
                 </div>
             </div>
             <hr class="bg-white">
             <div class="text-center">
-                <p>&copy; 2025 Explora el Mundo. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Tajamares Club. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
